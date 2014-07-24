@@ -31,3 +31,7 @@ for (var i = 0; i < h3s.length; i++) {
         };
 //}
 //document.getElementById("MyElement").className = "MyClass";
+
+
+var foot = document.querySelector('[id^="fnref:"]').id;
+console.log(foot);
