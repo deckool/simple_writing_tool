@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html><head><title>2014-03-28 14:14:19 UTC</title><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" type="text/css"><link rel="stylesheet" href="load.css"></head><body><a href="/blog">&lt;- back</a><a href="javascript:window.print()">print it!</a>2014-03-28 14:14:19 UTC<h2>Haskell starter environment on Debian droplet</h2>
+
+<h1>hi</h1>
+
+<h3>Introduction</h3>
+
+<p>Haskell environment in a Debian based system contains:</p>
+
+<ul>
+<li>GHCi is GHC's interactive environment, in which Haskell expressions can be interactively evaluated and programs can be interpreted.</li>
+<li>Cabal, the package manager</li>
+</ul>
+
+
+<p>Thanks to development of Haskell Platform, the basic Haskell environment became smooth.</p>
+
+<h3>Starting</h3>
+
+<p>We will start by creating a new droplet with debian image but these commands will also work for Ubuntu images.</p>
+
+<blockquote><p>We are allready root so <code>sudo</code> is not required, yet you can and you should use it if you login with other user than root</p></blockquote>
+
+<pre><code>apt-get install haskell-platform
+</code></pre>
+
+<p>The Haskell platform will provide all the dependencies for the system to tun Haskell.</p>
+
+<p>First of all let's say Hello World from Haskell.
+For this we need to open the compiler <code>ghci</code>. To do that we run <code>ghci</code> from our console.</p>
+
+<pre><code>$ ghci
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Loading package ffi-1.0 ... linking ... done.
+Prelude&gt;
+</code></pre>
+
+<div class="class"><p><a href="" title="xxx">lala</a></p></div>
+
+<p><span class="glarch"><a href="" title="lalala">image</a></span></p>
+
+<p><abbr title="desc">loo bar</abbr></p>
+
+<p><span id="name">the car</span></p>
+
+<p>text</p>
+
+<p>That's some text with a footnote. <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+<div class="footnotes">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Here&rsquo;s a footnote with some text.<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+</ol>
+</div>
+</body></html>

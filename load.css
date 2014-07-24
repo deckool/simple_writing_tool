@@ -1,0 +1,113 @@
+div.post::before {
+  content: attr(data-yearday);
+  color:rgba(255,255,255,0.5);
+  font-size:350%;
+  font-weight:bold;
+} 
+
+h1 a {
+  color:white;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.9s;
+  -ms-transition:.9s;
+  -moz-transition:.9s;
+  -webkit-transition:.9s;
+  /* ...and now for the proper property */
+  transition:.9s;
+  display:inline;
+  text-shadow:2px 2px 3px black;
+  text-decoration:none;
+}
+h1 a:hover { 
+  color:black;
+  cursor:pointer;
+  text-shadow: 1px 1px 1px white, 1px 1px 2px white;
+}
+#red-noise {
+  background: url('orange_PNG796.png'), url('purple.png');
+  background-repeat:no-repeat,repeat;
+}
+
+h3 {
+  margin:0;
+  font-family:monospace;
+  font-weight:normal;
+  color:white;
+}
+
+/*TIMELINE *****************/
+.timeline {
+  text-align: center;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 12px;
+  display: inline block;
+  overflow: hidden;
+  margin:0 auto;
+  text-align:center;
+}
+  .timeline li {
+    display: block;
+    float: left;
+    padding: 4px 8px 4px 16px;
+    position: relative;
+    margin: 0;
+    color: #fff;
+}
+    .timeline li:after {
+      content: "";
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+      position: absolute;
+      right: -10px;
+      top: 0;
+      z-index: 1;
+      border-left: 10px solid #26eb35; }
+    .timeline li:before {
+      content: "";
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .timeline li:nth-child(n):after {
+      border-left-width: 10px;
+      border-left-style: solid; }
+    .timeline li:nth-child(1) {
+      padding-left: 6px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; }
+      .timeline li:nth-child(1):before {
+        display: none; }
+    .timeline li:nth-child(1) {
+      background: #26eb35; }
+      .timeline li:nth-child(1):after {
+        border-left-color: #26eb35; }
+    .timeline li:nth-child(2) {
+      background: #15e325; }
+      .timeline li:nth-child(2):after {
+        border-left-color: #15e325; }
+    .timeline li:nth-child(3) {
+      background: #13cb21; }
+      .timeline li:nth-child(3):after {
+        border-left-color: #13cb21; }
+    .timeline li:nth-child(4) {
+      background: #11b41d; }
+      .timeline li:nth-child(4):after {
+        border-left-color: #11b41d; }
+    .timeline li:last-child {
+      padding-right: 10px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px; }
+      .timeline li:last-child:after {
+        display: none; }
+/*TIMELINE *****************/
