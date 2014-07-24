@@ -111,3 +111,19 @@ h3 {
       .timeline li:last-child:after {
         display: none; }
 /*TIMELINE *****************/
+
+
+:target {
+    -webkit-animation: target-fade 3s 1;
+    -moz-animation: target-fade 3s 1;
+}
+
+@-webkit-keyframes target-fade {
+    0% { background-color: rgba(102, 51, 153,.3); }
+    100% { background-color: rgba(102, 51, 153,0); }
+}
+
+@-moz-keyframes target-fade {
+    0% { background-color: rgba(102, 51, 153,.3); }
+    100% { background-color: rgba(102, 51, 153,0); }
+}
